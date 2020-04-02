@@ -6,8 +6,8 @@ This is a library to translate various CSS selectors to their XPath equivalent.
 
 ```php
 
-// Will output //*[contains(concat(' ', normalize-space(@class), ' '), ' h ')]
-echo CssToXpath::transform('.note');
+// Will output //*[contains(concat(' ', normalize-space(@class), ' '), ' node ')]
+echo CssToXpath::transform('.node');
 
 // Will output //*[@id='someid']
 echo $translator->translate('#someid');
