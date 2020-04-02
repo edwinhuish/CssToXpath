@@ -1,0 +1,40 @@
+{
+  "name": "edwinhuish/css-to-xpath",
+  "description": "CssToXpath easy way to translate css selector to Xpath",
+  "keywords": [
+    "css selector",
+    "xpath",
+    "css selector to xpath"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Edwinhuish\\CssToXpath\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Edwinhuish\\CssToXpath\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit && phpstan analyze src -l 5 && phpcs",
+    "coverage": "phpunit --coverage-html coverage/"
+  },
+  "authors": [
+    {
+      "name": "Edwin Xu",
+      "email": "edwinhuish@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5",
+    "phpunit/php-code-coverage": "^5.3",
+    "phpstan/phpstan": "^0.8",
+    "squizlabs/php_codesniffer": "^3.1"
+  }
+}
