@@ -311,7 +311,7 @@ class CssToXpath
             case 'odd': // :nth-child(odd)
                 return '[(count(preceding-sibling::*) + 1) mod 2=1]';
 
-            case \preg_match('/^-?[1-9]\d*$/', $str, $matches) === 1:  // :nth-child(1)
+            case \preg_match('/^-?[0-9]\d*$/', $str, $matches) === 1:  // :nth-child(1)
 
                 if ($matches[0] < 0) {
                     $idx = $matches[0] + 1;
