@@ -81,4 +81,14 @@ class TranslateTest extends TestCase
             $this->assertEquals($expected_xpath, CssToXpath::transform($css), $css);
         }
     }
+
+
+    /*
+     * Test invalid xpath expression
+     */
+    public function testInvalidPseudoSelector()
+    {
+        $this->expectException(\Exception::class);
+        CssToXpath::transform('a:not-a-selector');
+    }
 }
