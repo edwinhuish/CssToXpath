@@ -1,10 +1,12 @@
 {
   "name": "edwinhuish/css-to-xpath",
-  "description": "CssToXpath easy way to translate css selector to Xpath",
+  "description": "CssToXpath easy way to translate jquery / css selector to Xpath",
   "keywords": [
     "css selector",
+    "jquery selector",
     "xpath",
-    "css selector to xpath"
+    "css selector to xpath",
+    "jquery selector to xpath"
   ],
   "type": "library",
   "license": "MIT",

@@ -69,6 +69,12 @@ class TranslateTest extends TestCase
             'img:nth-child(0)'            => '//img',
             'img:nth-child(234)'          => '//img[234]',
             'img:nth-child(-3)'           => '//img[last()-2]',
+            ':gt(2)'                      => '//*[count(preceding-sibling::*)>=2]',
+            ':lt(8)'                      => '//*[count(preceding-sibling::*)<=8]',
+            'p:gt(2)'                     => '//p[count(preceding-sibling::*)>=2]',
+            'p:lt(8)'                     => '//p[count(preceding-sibling::*)<=8]',
+            'div p:gt(2)'                 => '//div//p[count(preceding-sibling::*)>=2]',
+            'div p:lt(8)'                 => '//div//p[count(preceding-sibling::*)<=8]',
         );
 
         foreach ($css_to_xpath as $css => $expected_xpath) {

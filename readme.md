@@ -82,3 +82,8 @@ The following selectors are currently covered:
 - :has(foo)
 - :contains(foo)
 
+## Jquery selector support:
+- :eq(2)
+- :eq(-5)
+- :gt(4)
+- :lt(8)
