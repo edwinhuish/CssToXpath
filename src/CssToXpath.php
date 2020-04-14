@@ -292,10 +292,10 @@ class CssToXpath
             return '';
         }
 
-        if ($expression === 'first' || $expression === 'last') { // new path inside selection
-            array_unshift($new_path_tokens, '(');
-            $new_path_tokens[] = ')';
-        }
+//        if ($expression === 'first' || $expression === 'last') { // new path inside selection
+//            array_unshift($new_path_tokens, '(');
+//            $new_path_tokens[] = ')';
+//        }
 
         //  static replacement
 
